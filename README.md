@@ -8,11 +8,11 @@ This project implements a high-precision Data Acquisition System (DAQ) to valida
 
 ## 🛠️ The Challenge: OS Latency
 To measure the generator's efficiency ($\eta = P_{elec} / P_{mech}$), we needed to correlate the buoy's movement with the power output.
-* [cite_start]**Problem:** Using Windows OS to timestamp high-frequency sensor data introduced variable latency (drift), making precise synchronization impossible[cite: 41, 45].
+* **Problem:** Using Windows OS to timestamp high-frequency sensor data introduced variable latency (drift), making precise synchronization impossible[cite: 41, 45].
 * **Consequence:** Data skews rendered the mechanical-to-electrical efficiency models invalid.
 
 ## 💡 The Solution: Hardware "Time Master"
-[cite_start]I designed a closed-loop architecture where the **ESP32 Microcontroller acts as the Time Master**, bypassing the OS scheduler entirely.
+I designed a closed-loop architecture where the **ESP32 Microcontroller acts as the Time Master**, bypassing the OS scheduler entirely.
 
 1.  **PC (Python):** Tracks markers via webcam and sends position $(X, Y)$ to the ESP32.
 2.  **ESP32 (C++):** Waits for the position packet.
