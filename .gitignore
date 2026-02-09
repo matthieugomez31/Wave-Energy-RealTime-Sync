@@ -9,20 +9,18 @@ env/
 
 --- Data & Logs (IMPORTANT) ---
 
-On ignore tous les CSV et vidéos par défaut car ils sont lourds
+On ignore les CSV et vidéos lourds
 
 *.csv
 *.xlsx
 *.mp4
 *.avi
 
-MAIS on force l'inclusion du dossier d'exemples (pour garder tes samples)
+EXCEPTION 1 : On garde les exemples de données
 
 !03_Data_Samples/*.csv
 
 --- Arduino / ESP32 ---
-
-Fichiers de compilation temporaires inutiles
 
 .ipsc
 .build/
@@ -30,20 +28,26 @@ board.txt
 
 --- IDE & OS Settings ---
 
-Fichiers de configuration perso (VS Code, Mac, Windows)
-
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
 
---- Résultats générés ---
+--- Résultats générés & Assets ---
 
-Si ton script génère des graphes, on évite de les versionner
+Par défaut, on ignore les images et PDF générés par les scripts
 
 *.png
+*.jpg
+*.jpeg
 *.pdf
 
-Sauf si tu veux garder les assets visuels du projet
+EXCEPTION 2 : On FORCE l'inclusion des dossiers officiels
 
+(C'est ici qu'on débloque tes dossiers assets et docs)
+
+!docs/.pdf
+!04_Reports/.pdf
+!assets/*
+!99_Assets/*
 !Visual_Asset_Draft_*.pdf
