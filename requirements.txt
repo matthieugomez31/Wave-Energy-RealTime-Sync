@@ -1,0 +1,17 @@
+--- Data Analysis & Science (S2) ---
+
+pandas>=2.0.0
+matplotlib>=3.7.0
+numpy>=1.24.0
+scipy>=1.10.0
+seaborn>=0.12.0  # Optionnel pour de plus jolis graphes
+
+--- Computer Vision & Acquisition (S1) ---
+
+opencv-python>=4.8.0
+pyserial>=3.5     # Pour la communication avec l'Arduino/ESP32
+
+--- Utilities ---
+
+jupyter           # Si jamais tu veux faire des notebooks plus tard
+openpyxl          # Pour lire/écrire des fichiers Excel (.xlsx) si besoin

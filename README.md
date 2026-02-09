@@ -20,7 +20,7 @@ I designed a closed-loop architecture where the **ESP32 Microcontroller acts as 
 4.  **Data Return:** The ESP32 packages the synchronized tuple `(Timestamp, X, Y, V, I)` and sends it back to the PC for logging.
 
 ### System Architecture
-![System Diagram](assets/system_architecture.png)
+![System Diagram](99_Assets/system_architecture.png)
 *(Figure: Data flow ensuring <10ms synchronization delay)*
 
 ## ⚙️ Key Technical Features
@@ -36,7 +36,7 @@ Hardcoding a pixel-to-mm ratio is error-prone due to camera vibrations. I implem
 * **Sensor:** INA219 (High-Side DC Current/Voltage) over I2C.
 * **Power Stage:** Full-bridge rectifier connecting the generator to the load.
 
-![Wiring Diagram](assets/wiring_diagram.png)
+![Wiring Diagram](99_Assets/wiring_diagram.png)
 
 ## 💻 Tech Stack
 * **Embedded:** C++ (Arduino Framework), Serial Communication (115200 baud).
@@ -44,7 +44,7 @@ Hardcoding a pixel-to-mm ratio is error-prone due to camera vibrations. I implem
 * **Protocols:** UART (Serial), I2C.
 
 ## 🚀 How to Run
-*(Detailed operational guide available in `docs/Report.pdf`)*
+*(Detailed operational guide available in `04_Reports/Report.pdf`)*
 
 1.  **Hardware:** Connect ESP32 via Data USB. Ensure markers 10, 11, and 12 are visible.
 2.  **Software Sequence:**
@@ -54,4 +54,4 @@ Hardcoding a pixel-to-mm ratio is error-prone due to camera vibrations. I implem
 3.  **Output:** Data is saved to `log_experience_YYYYMMDD.csv` for MATLAB/Excel analysis.
 
 ---
-*Full Engineering Report available in the `docs/` folder.*
+*Full Engineering Report available in the `04_Reports/` folder.*

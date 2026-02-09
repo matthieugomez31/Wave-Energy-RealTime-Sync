@@ -1,0 +1,49 @@
+--- Python ---
+
+pycache/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+--- Data & Logs (IMPORTANT) ---
+
+On ignore tous les CSV et vidéos par défaut car ils sont lourds
+
+*.csv
+*.xlsx
+*.mp4
+*.avi
+
+MAIS on force l'inclusion du dossier d'exemples (pour garder tes samples)
+
+!03_Data_Samples/*.csv
+
+--- Arduino / ESP32 ---
+
+Fichiers de compilation temporaires inutiles
+
+.ipsc
+.build/
+board.txt
+
+--- IDE & OS Settings ---
+
+Fichiers de configuration perso (VS Code, Mac, Windows)
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+--- Résultats générés ---
+
+Si ton script génère des graphes, on évite de les versionner
+
+*.png
+*.pdf
+
+Sauf si tu veux garder les assets visuels du projet
+
+!Visual_Asset_Draft_*.pdf
