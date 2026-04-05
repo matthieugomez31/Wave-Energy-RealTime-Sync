@@ -7,7 +7,7 @@ from scipy.signal import savgol_filter
 # 1. CONFIGURATION
 # ==========================================
 # Path to your file
-FILE_PATH = '03_Data_Samples/log_experience_wireless_20260331_163737.csv' 
+FILE_PATH = '03_Data_Samples/log_experience_wireless_20260402_162107.csv' 
 
 # CSV Format Settings
 CSV_SEP = ';'       # Separator is semicolon
