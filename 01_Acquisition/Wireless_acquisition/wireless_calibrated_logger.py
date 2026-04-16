@@ -20,7 +20,7 @@ UDP_PORT = 4210      # Must match the ESP32 port
 REFERENCE_ID_1 = 10  # Origin point (0,0)
 REFERENCE_ID_2 = 11  # Second point for scaling
 MOBILE_ID = 12       # The marker on the moving object
-KNOWN_DISTANCE_MM = 160.0 # Physical distance between REF_1 and REF_2
+KNOWN_DISTANCE_MM = 200.0 # Physical distance between REF_1 and REF_2
 
 # --- Camera Settings ---
 CAMERA_INDEX = 1 # 0 for internal webcam, 1 for external USB webcam

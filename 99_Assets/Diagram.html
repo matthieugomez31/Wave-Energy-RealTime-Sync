@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visual Asset - The Ocean Advantage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+        /* RESET & BASE */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Open Sans', sans-serif;
+            padding: 40px;
+        }
+
+        /* COLOR PALETTE REQUIRED BY USER */
+        :root {
+            --dark-blue: #1D4E9D;
+            --yellow: #FDC21F;
+            --light-blue: #A3CEEF;
+            --black-text: #1a202c;
+            --gray-text: #475569;
+            --light-gray: #f8fafc;
+        }
+
+        /* INFOGRAPHIC CONTAINER - Pure White, 16:9 */
+        .infographic-container {
+            width: 1280px;
+            height: 720px;
+            background: #ffffff;
+            display: grid;
+            grid-template-rows: auto 1fr auto auto;
+            position: relative;
+        }
+
+        /* HEADER */
+        header {
+            padding: 40px 60px 10px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            z-index: 10;
+        }
+        .project-id {
+            color: var(--dark-blue);
+            font-weight: 900;
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 5px;
+        }
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4rem;
+            font-weight: 900;
+            color: var(--black-text);
+            line-height: 1;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        /* MAIN CONTENT - 3 Pillar Grid */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            padding: 10px 60px;
+            z-index: 10;
+        }
+
+        /* CARDS DESIGN */
+        .card {
+            background: var(--light-gray);
+            border-radius: 20px;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-top: 12px solid transparent;
+        }
+
+        /* Color specifics for each card */
+        .card.density { border-top-color: var(--dark-blue); }
+        .card.predict { border-top-color: var(--yellow); }
+        .card.potential { border-top-color: var(--light-blue); }
+
+        .card-icon {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+        }
+        .card.density .card-icon { color: var(--dark-blue); }
+        .card.predict .card-icon { color: var(--yellow); }
+        .card.potential .card-icon { color: var(--light-blue); }
+
+        .big-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 7rem;
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 10px;
+            color: var(--black-text);
+            letter-spacing: -2px;
+        }
+
+        .card-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--black-text);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0;
+        }
+
+        /* MASSIVE STATEMENT */
+        .massive-statement {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: var(--black-text);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 10px 60px 20px 60px;
+        }
+        .massive-statement span {
+            color: var(--dark-blue);
+            background: linear-gradient(120deg, transparent 0%, transparent 40%, var(--yellow) 40%, var(--yellow) 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 30%;
+            background-position: 0 88%;
+        }
+
+        /* FOOTER / INFO BAR */
+        .infographic-info {
+            padding: 20px 60px;
+            color: var(--gray-text);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+        .team-id {
+            font-size: 1.1rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .tagline {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--dark-blue);
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="infographic-container">
+
+        <!-- HEADER -->
+        <header>
+            <div>
+                <div class="project-id">Capstone Project: Point Absorber WEC</div>
+                <h1>The Blue Energy Revolution</h1>
+            </div>
+            <div class="icon-box">
+                <i class="fa-solid fa-water" style="font-size: 65px; color: var(--dark-blue);"></i>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT (3 Pillars) -->
+        <main class="metrics-grid">
+            
+            <!-- CARD 1: DENSITY -->
+            <div class="card density">
+                <i class="fa-solid fa-droplet card-icon"></i>
+                <div class="big-number">832x</div>
+                <div class="card-title">Denser than air</div>
+            </div>
+
+            <!-- CARD 2: PREDICTABILITY -->
+            <div class="card predict">
+                <i class="fa-solid fa-calendar-check card-icon"></i>
+                <div class="big-number">24/7</div>
+                <div class="card-title">Always On</div>
+            </div>
+
+            <!-- CARD 3: POTENTIAL -->
+            <div class="card potential">
+                <i class="fa-solid fa-earth-americas card-icon"></i>
+                <div class="big-number">29k</div>
+                <div class="card-title">TWh / Year</div>
+            </div>
+
+        </main>
+
+        <!-- MASSIVE STATEMENT -->
+        <div class="massive-statement">
+            The Missing Piece of the <span>Clean Energy Mix</span>
+        </div>
+
+        <!-- FOOTER / INFO BAR -->
+        <div class="infographic-info">
+            <div class="team-id">
+                <i class="fa-solid fa-users"></i> The Blue Economy Capstone Team
+            </div>
+            <div class="tagline"><i class="fa-solid fa-bolt"></i> Engineering for Sustainability</div>
+        </div>
+    </div>
+
+</body>
+</html>
